@@ -1,27 +1,22 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <title>Hello, welcome to Zaelia's WebVR! • A-Frame</title>
-    <meta name="description" content="Hello, WebVR! • A-Frame">
-    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <title>Textures - A-Frame School</title>
+    <meta name="description" content="Textures - A-Frame School">
+    <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
   </head>
   <body>
-    <a-scene rotation="0 0 0" background="color: #FAFAFA">
-      
-      <a-box position="-1.25 0.5 -3" rotation="0 45 0" color="#4CC3D9" shadow></a-box>
-      <a-sphere id="parent" position="0 1.25 -5" radius="1.25" color="#EF2D33" shadow></a-sphere>
-      <a-cylinder position="1 0.75 -2.8" rotation="0 15 0" radius="0.5" height="2" color="#FFC65D" shadow></a-cylinder>
-      <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4" shadow></a-plane>
-      <a-dodecahedron position="3 0.75 -3" color="#4CC"></a-dodecahedron>
-      <a-torus-knot position="-5 0.75 -4" radius="-0.5" color="#EF2D33"></a-torus-knot>
-            <a-sky color="#000"></a-sky>
-      <a-entity position="2 3 -2.8"
-                text="anchor: center; width: 5.5; color: white; value: Welcome World!">
-      </a-entity>
-    
-    
-    
+    <a-scene>
+      <a-sky src="https://cdn.glitch.com/b870d9ec-1139-44f9-b462-223e4a2c74e7%2Fsechelt.jpg?v=1490307995926"></a-sky>
+
+      <a-box src="https://cdn.glitch.com/b870d9ec-1139-44f9-b462-223e4a2c74e7%2Ftexture.jpg?v=1490308149272" position="-2 0.5 -4"></a-box>
+      <a-sphere src="https://cdn.glitch.com/b870d9ec-1139-44f9-b462-223e4a2c74e7%2Fcubes.jpg?v=1490308405745" radius="0.5" position="0 0.5 -3"></a-sphere>
+      <a-cone src="https://cdn.glitch.com/b870d9ec-1139-44f9-b462-223e4a2c74e7%2Fcone.jpg?v=1490308535937" height="2" radius-top="0.1" position="0 1 -6"></a-cone>
+      <a-box src="https://cdn.glitch.com/b870d9ec-1139-44f9-b462-223e4a2c74e7%2Fdirt.jpg?v=1490308269805" position="2 0.5 -4"></a-box>
+      <a-plane src="https://cdn.glitch.com/b870d9ec-1139-44f9-b462-223e4a2c74e7%2Fthumbnails%2Ffloor.jpg?1490307896453" rotation="-90 0 0" height="100" width="100"></a-plane>
+
+      <a-light type="ambient" color="#445451"></a-light>
+      <a-light type="point" intensity="2" position="2 4 4"></a-light>
     </a-scene>
   </body>
 </html>
